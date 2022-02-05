@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js" defer></script>
+</head>
+
+<body>
+    <!-- Hier befüllt und verwaltet TS das Grid -->
+    <table id="grid"></table>
+    <div id="inputs">
+        <label for="difficulty"><b>Schwierigkeit:</b></label>
+        <select id="difficulty">
+            <option value="1">Leicht</option>
+            <option value="2" selected>Mittel</option>
+            <option value="3">Schwer</option>
+        </select>
+        <button id="generate">Neu</button>
+        <button id="solve">L&ouml;sen</button>
+    </div>
+    <div id="info">
+        <h3>Steuerung:</h3>
+        <ol>
+            <li><span style="color: #b1f8b1; font-weight: bold;">Leeres Feld</span> per Mausklick ausw&auml;hlen
+            </li>
+            <li>Ziffer tippen, welche man einf&uuml;gen m&ouml;chte.</li>
+            <li>Bei Bedarf <span style="color: #ffbe8a; font-weight: bold;">bearbeitetes Feld</span> ausw&auml;hlen und
+                mit
+                Dr&uuml;cken
+                von 0 zur&uuml;cksetzen</li>
+        </ol>
+        <h3>Regeln:</h3>
+        <ol>
+            <li>In jeder Zeile m&uuml;ssen die Ziffern 1 bis 9 vorkommen.</li>
+            <li>In jeder Spalte m&uuml;ssen die Ziffern 1 bis 9 vorkommen.</li>
+            <li>In jedem 3x3-Quadrat m&uuml;ssen die Ziffern 1 bis 9 vorkommen.</li>
+            <li>Man gewinnt, wenn alle Felder bef&uuml;llt sind. Viel Spa&szlig;!</li>
+        </ol>
+    </div>
+</body>
+
+</html>
